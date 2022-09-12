@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /** Font **/
+    --fuentePrincipal: 'Kumbh Sans', sans-serif;
+
+    /** Primario **/
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(229, 23%, 23%);
+
+    /** Neutral **/
+    --darkGray: hsl(0, 0%, 59%);
+
+
+    --blanco: #fff;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: var(--darkCyan);
+
+    background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: -216px -209px, 171px 520px;
+}
+
+/** Globales **/
+
+.contenedor {
+    margin: 0 auto;
+    width: min(90%, 35rem);
+    margin-top: 14.7rem;
+    margin-bottom: 14.6rem;
+    background-color: var(--blanco);
+    border-radius: 2rem;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-family: var(--fuentePrincipal);
+    font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+.atribution {
+    font-size: 1rem;
+    text-align: center;
+}
+.atribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/** Utilidades **/
+
+.centrar-texto {
+    text-align: center;
+}
+
+.centrar-imagen {
+    position: relative;
+    top: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-margin {
+    margin: 0;
+}
+.sombra {
+    box-shadow: 0px 32px 34px -8px hsl(224deg 23% 55% / 48%);
+    border-radius: 2rem;
+}
+
+/*header*/
+.header {
+    background-image: url('../img/bg-pattern-card.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2rem 2rem 0 0;
+    height: 14rem;
+}
+
+.header img {
+    border: 0.5rem solid #fff;
+    border-radius: 10rem;
+}
+
+/*indfo*/
+.info {
+    padding: 7.7rem 0 2.9rem 0;
+    border-bottom: 1px solid var(--darkGray);
+}
+.name {
+    font-weight: 700;
+}
+
+.name span {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--darkGray);
+}
+
+.country {
+    font-size: 1.4rem;
+    color: var(--darkGray);
+}
+
+/*datos*/
+.datos {
+    padding: 3rem 0 2.7rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.numbers {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--darkGray);
+}
+
+/*Media Queria*/
+@media (min-width: 1440px) {
+    body {
+        background-position: -30px -347px, 803px 308px;
+    }
+}
