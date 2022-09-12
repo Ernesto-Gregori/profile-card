@@ -56,7 +56,11 @@ a {
 
 h1 {
     font-family: var(--fuentePrincipal);
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.0rem;
 }
 
 img {
